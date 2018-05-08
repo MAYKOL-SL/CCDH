@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { ComunicationcdhModule } from './comunicationcdh/comunicationcdh.module';
+/*import { ThemeModule } from './@theme/theme.module';*/
 
 
 @NgModule({
@@ -14,7 +15,11 @@ import { ComunicationcdhModule } from './comunicationcdh/comunicationcdh.module'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ComunicationcdhModule
+    ComunicationcdhModule,
+    /*ThemeModule*/
+  ],
+  exports: [
+    /*ThemeModule*/
   ],
   providers: [],
   bootstrap: [AppComponent]
