@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './comunicationcdh/login/login.component';
 import { PrincipalComponent } from './comunicationcdh/principal/principal.component';
+import { CalendarComponent } from './comunicationcdh/calendar/calendar.component';
+
 
 
 const routes: Routes = [
@@ -13,6 +15,10 @@ const routes: Routes = [
      path: 'principal',
      component: PrincipalComponent
    },
+   {
+    path: 'calendar',
+    component: CalendarComponent
+  },
    {
      path: '**', pathMatch: 'full', redirectTo: 'login'
    }
