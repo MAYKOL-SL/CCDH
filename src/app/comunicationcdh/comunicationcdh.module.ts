@@ -9,6 +9,7 @@ import { PerfilComponent } from './perfil/perfil.component';
 import { PublicacionesComponent } from './publicaciones/publicaciones.component';
 import { PublicacionImgUnComponent } from './publicacion-img-un/publicacion-img-un.component';
 import { PublicacionImgMuchComponent } from './publicacion-img-much/publicacion-img-much.component';
+import { ChatComponent } from './list-chat/chat.component';
 
 
 @NgModule({
@@ -16,6 +17,8 @@ import { PublicacionImgMuchComponent } from './publicacion-img-much/publicacion-
     CommonModule
   ],
   declarations: [LoginComponent, PrincipalComponent, CalendarComponent, 
-                  MenuComponent, HeaderComponent, PerfilComponent, PublicacionesComponent, PublicacionImgUnComponent, PublicacionImgMuchComponent]
+                  MenuComponent, HeaderComponent, PerfilComponent, PublicacionesComponent,
+                  PublicacionImgUnComponent, PublicacionImgMuchComponent, 
+                  ChatComponent]
 })
 export class ComunicationcdhModule { }

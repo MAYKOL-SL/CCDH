@@ -14,7 +14,7 @@ import { ComunicationcdhModule } from './comunicationcdh/comunicationcdh.module'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ComunicationcdhModule
+    ComunicationcdhModule,
      /*ThemeModule*/
     ],
     exports: [
