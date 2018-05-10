@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { ComunicationcdhModule } from './comunicationcdh/comunicationcdh.module';
 /*import { ThemeModule } from './@theme/theme.module';*/
 
-
 @NgModule({
   declarations: [
     AppComponent
@@ -15,12 +14,12 @@ import { ComunicationcdhModule } from './comunicationcdh/comunicationcdh.module'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ComunicationcdhModule,
-    /*ThemeModule*/
-  ],
-  exports: [
-    /*ThemeModule*/
-  ],
+    ComunicationcdhModule
+     /*ThemeModule*/
+    ],
+    exports: [
+      /*ThemeModule*/
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
