@@ -8,137 +8,26 @@
       </div>
     <div class="panel panel-default" id="contacts">
       <ul class="list-group" id="contact-list">
-        <li id = "" class="list-group-item " >
+        <li *ngFor="let contacto of contactos" id = "contacto.id" class="list-group-item " >
               <div class="row">
-                <div class="col-3 well">
-                  <img  src="../../../assets/imagenes/contactos/alan.png"  class="rounded-circle" />
-                  <svg id="estado" height="60" width="60">
+                <div class="col-3">
+                  <img  src = {{contacto.imagen}}  class="rounded-circle" />
+                  <svg *ngIf="contacto.estado == true" id="estado" height="60" width="60">
                     <circle cx="35" cy="8" r="3.5" stroke="white" stroke-width="1" fill="#98E600" />
                   </svg>
                 </div>
-                <div  class="col-6 well">
-                    <a class="text-sm-left">Gurdeep Singh</a>
-                    <p class="text-secondary" aria-hidden="true">Hola</p>
+                <div  class="col-6">
+                    <a class="text-sm-left">{{contacto.nombre}}</a>
+                    <p class="text-secondary" aria-hidden="true">{{contacto.mensaje}}</p>
                 </div>
-                <div class="col-3 well">
+                <div class="col-3">
                     <p class="text-secondary">9:12 pm</p>
                     <span id="numMensaje" class="badge badge-primary badge-pill">1</span>
                 </div>
                 <div class="clearfix"></div>
               </div>
         </li>
-        <li class="list-group-item">
-            <div class="row">
-              <div class="col-3">
-                     <img src="../../../assets/imagenes/contactos/lee.png"  class="rounded-circle" />
-              </div>
-              <div  class="col-6">
-                  <a class="text-sm-left">Lee Parker</a>
-                  <p class="text-secondary" aria-hidden="true">Hola</p>
-              </div>
-              <div class="col-3">
-                  <p class="text-secondary">9:12 pm</p>
-                  <span class="badge badge-primary badge-pill">3</span>
-              </div>
-              <div class="clearfix"></div>
-            </div>
-        </li>
-        <li class="list-group-item">
-              <div class="row">
-                <div class="col-3 well">
-                  <img src="../../../assets/imagenes/contactos/nick.png"  class="rounded-circle" />
-                </div>
-                <div  class="col-6 well">
-                    <a class="text-sm-left">Nick Strong</a>
-                    <p class="text-secondary" aria-hidden="true">Holaiujghiujghiujhgikjkgbjnbjnujghiujk</p>
-                </div>
-                <div class="col-3 well">
-                    <p class="text-secondary">9:12 pm</p>
-                    <span class="badge badge-primary badge-pill">1</span>
-                </div>
-                <div class="clearfix"></div>
-              </div>
-        </li>
-        <li class="list-group-item">
-            <div class="row">
-              <div class="col-3 well">
-                <img src="../../../assets/imagenes/contactos/eva.png"  class="rounded-circle" />
-              </div>
-              <div class="col-6 well">
-                  <a class="text-sm-left">Seth Frazier</a>
-                  <p class="text-secondary" aria-hidden="true">Como estas?</p>
-              </div>
-              <div class="col-3 well">
-                  <p class="text-secondary">9:12 pm</p>
-                  <span class="badge badge-primary badge-pill">2</span>
-              </div>
-              <div class="clearfix"></div>
-            </div>
-          </li>
-          <li class="list-group-item">
-              <div class="row">
-                <div class="col-3 well">
-                  <img src="../../../assets/imagenes/contactos/kate.png"  class="rounded-circle" />
-                </div>
-                <div  class="col-6 well">
-                    <a class="text-sm-left">Gurdeep Singh</a>
-                    <p class="text-secondary" aria-hidden="true">Hola</p>
-                </div>
-                <div class="col-3 well">
-                    <p class="text-secondary">9:12 pm</p>
-                    <span class="badge badge-primary badge-pill">1</span>
-                </div>
-                <div class="clearfix"></div>
-              </div>
-        </li>
-        <li class="list-group-item">
-            <div class="row">
-              <div class="col-3 well">
-                <img src="../../../assets/imagenes/contactos/kate.png"  class="rounded-circle" />
-              </div>
-              <div  class="col-6 well">
-                  <a class="text-sm-left">Lee Parker</a>
-                  <p class="text-secondary" aria-hidden="true">Hola</p>
-              </div>
-              <div class="col-3 well">
-                  <p class="text-secondary">9:12 pm</p>
-                  <span class="badge badge-primary badge-pill">3</span>
-              </div>
-              <div class="clearfix"></div>
-            </div>
-        </li>
-        <li class="list-group-item">
-              <div class="row">
-                <div class="col-3 well">
-                  <img src="../../../assets/imagenes/contactos/jack.png"  class="rounded-circle" />
-                </div>
-                <div  class="col-6 well">
-                    <a class="text-sm-left">Nick Strong</a>
-                    <p class="text-secondary" aria-hidden="true">Holaiujghiujghiujhgikjkgbjnbjnujghiujk</p>
-                </div>
-                <div class="col-3 well">
-                    <p class="text-secondary">9:12 pm</p>
-                    <span class="badge badge-primary badge-pill">1</span>
-                </div>
-                <div class="clearfix"></div>
-              </div>
-        </li>
-        <li class="list-group-item">
-            <div class="row">
-              <div class="col-3 well">
-                <img src="../../../assets/imagenes/contactos/alan.png"  class="rounded-circle" />
-              </div>
-              <div class="col-6 well">
-                  <a class="text-sm-left">Seth Frazier</a>
-                  <p class="text-secondary" aria-hidden="true">Como estas?</p>
-              </div>
-              <div class="col-3 well">
-                  <p class="text-secondary">9:12 pm</p>
-                  <!--<span class="badge badge-primary badge-pill"></span>-->
-              </div>
-              <div class="clearfix"></div>
-            </div>
-          </li>
+        
       </ul>
     </div>
     <footer id="footer" class="row">

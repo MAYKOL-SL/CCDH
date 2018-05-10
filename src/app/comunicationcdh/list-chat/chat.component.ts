@@ -1,5 +1,5 @@
 import { Component, OnInit} from '@angular/core';
-import { ContactService } from '../services/contact.service';
+import { Contact } from './contact';
 declare var jQuery:any;
 declare var $:any;
 
@@ -13,12 +13,23 @@ declare var $:any;
 
 export class ChatComponent{
     public titulo: String;
-    public contactos: any;
-    private contactService: ContactService;
+    public contact: Contact;
+    public contactos: Array<Contact>;
 
     constructor(){
         this.titulo = 'Chat';
+        this.contact = new Contact(1, 'Nick Jones', 'assets/imagenes/contactos/nick.png', true, 'hola', '9:12 pm', 1);
+        this.contactos = [
+            new Contact(1, 'Nick Jones', 'assets/imagenes/contactos/nick.png', true, 'hola como esta?, hace tiempo que no te veo', '9:12 pm', 1),
+            new Contact(2, 'Eva Moor', 'assets/imagenes/contactos/eva.png', true, 'hola', '9:12 pm', 1),
+            new Contact(3, 'Jack Williams', 'assets/imagenes/contactos/lee.png', true, 'hola', '9:12 pm', 1),
+            new Contact(4, 'Lee Wong', 'assets/imagenes/contactos/nick.png', true, 'hola', '9:12 pm', 1),
+            new Contact(5, 'Alan Thompson', 'assets/imagenes/contactos/alan.png', true, 'hola', '9:12 pm', 1),
+            new Contact(6, 'Kate Martinez', 'assets/imagenes/contactos/kate.png', true, 'hola', '9:12 pm', 1),
+            new Contact(7, 'Jackson Moor', 'assets/imagenes/contactos/jack.png', true, 'hola', '9:12 pm', 1),
 
+        ];
+        //accion de presionar en un contacto
         $(document).ready(function(){
             $("li").click(function(){
               $("#numMensaje").remove();
@@ -27,20 +38,8 @@ export class ChatComponent{
     }
 
     ngOnInit(){
-        
-        this.contactService.getContacts()
-            .subscribe((contacts: any) => {
-                this.contactos = [
-                    {contacto: contacts.nick, estado: 'true', mensaje: 'hola', numMensaje: '1'},
-                    {contacto: contacts.eva, estado: 'false', mensaje: 'Como estas?', numMensaje: '3'},
-                    {contacto: contacts.jack, estado: 'true', mensaje: 'hola', numMensaje: '2'},
-                    {contacto: contacts.lee, estado: 'true', mensaje: 'Buenos Dias', numMensaje: '1'},
-                    {contacto: contacts.alan, estado: 'false', mensaje: 'Como esta?', numMensaje: '1'},
-                    {contacto: contacts.kate, estado: 'true', mensaje: 'hola', numMensaje: '2'},
-                    {contacto: contacts.jackson, estado: 'false', mensaje: 'hola amigo', numMensaje: '3'},
-        ];
-    });
-        console.log('se ha cargado el componente');
+        console.log(this.contact);
+
     }
 
 
