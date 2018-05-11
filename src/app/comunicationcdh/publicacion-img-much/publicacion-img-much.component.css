@@ -72,7 +72,7 @@
  /*varias imagenes responsivo*/
  @media (min-width: 320px) {
    .img-tam-u{
-     width: 150px;
+     width: 149px;
      height: 194px;
    }
    .img-tam-d{
@@ -91,7 +91,7 @@
  
  @media (min-width: 992px) {
    .img-tam-u{
-     width: 175px;
+     width: 174px;
      height: 194px;
    }
  
