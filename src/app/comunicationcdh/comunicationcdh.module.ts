@@ -11,6 +11,7 @@ import { PublicacionImgUnComponent } from './publicacion-img-un/publicacion-img-
 import { PublicacionImgMuchComponent } from './publicacion-img-much/publicacion-img-much.component';
 import { ChatComponent } from './list-chat/chat.component';
 import { NotifiComponent } from './notificaciones/notificaciones.component';
+import { VideoLocalComponent } from './Video-Local/video-local.component';
 
 
 @NgModule({
@@ -20,6 +21,6 @@ import { NotifiComponent } from './notificaciones/notificaciones.component';
   declarations: [LoginComponent, PrincipalComponent, CalendarComponent, 
                   MenuComponent, HeaderComponent, PerfilComponent, PublicacionesComponent,
                   PublicacionImgUnComponent, PublicacionImgMuchComponent, NotifiComponent,
-                  ChatComponent]
+                  ChatComponent,VideoLocalComponent]
 })
 export class ComunicationcdhModule { }
