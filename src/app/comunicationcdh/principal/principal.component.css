@@ -4,3 +4,22 @@
 .containercolor{
   background: #e1e1ef;
 }
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  #izquierda{
+          display:none;
+  }
+  #derecha{
+      display:none;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  #izquierda{
+      display:none;
+  }
+  #derecha{
+      display:none;
+  }
+}

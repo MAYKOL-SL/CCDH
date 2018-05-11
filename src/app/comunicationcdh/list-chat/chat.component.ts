@@ -30,18 +30,22 @@ export class ChatComponent{
 
         ];
         //accion de presionar en un contacto
-        $(document).ready(function(){
+        /*$(document).ready(function(){
             $("li").click(function(){
-              $("#numMensaje").remove();
+              $(".bad").remove();
             });
-          });
+          });*/
     }
+
 
     ngOnInit(){
         console.log(this.contact);
 
     }
 
-
+    public myFunction(id){
+        $("span").remove('#'+id);
+        console.log('#'+id);
+    }
     
 }

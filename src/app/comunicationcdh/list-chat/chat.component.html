@@ -3,13 +3,13 @@
       <div class="card-header bg-transparent">
         <button type="button" class="btn btn-link">
           <img  src="../../../assets/imagenes/iconos/CHAT_ON.svg" />
-          <h5>Chat</h5>
+          <h5>{{titulo}}</h5>
         </button>
       </div>
     <div class="panel panel-default" id="contacts">
       <ul class="list-group" id="contact-list">
-        <li *ngFor="let contacto of contactos" id = "contacto.id" class="list-group-item " >
-              <div class="row">
+        <li *ngFor="let contacto of contactos"  class="list-group-item " >
+              <div (click)="myFunction(contacto.id)" class="row">
                 <div class="col-3">
                   <img  src = {{contacto.imagen}}  class="rounded-circle" />
                   <svg *ngIf="contacto.estado == true" id="estado" height="60" width="60">
@@ -22,7 +22,7 @@
                 </div>
                 <div class="col-3">
                     <p class="text-secondary">9:12 pm</p>
-                    <span id="numMensaje" class="badge badge-primary badge-pill">1</span>
+                    <span id = {{contacto.id}} class="badge badge-primary badge-pill">1</span>
                 </div>
                 <div class="clearfix"></div>
               </div>
