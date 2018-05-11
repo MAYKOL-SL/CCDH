@@ -10,6 +10,7 @@ import { PublicacionesComponent } from './publicaciones/publicaciones.component'
 import { PublicacionImgUnComponent } from './publicacion-img-un/publicacion-img-un.component';
 import { PublicacionImgMuchComponent } from './publicacion-img-much/publicacion-img-much.component';
 import { ChatComponent } from './list-chat/chat.component';
+import { NotifiComponent } from './notificaciones/notificaciones.component';
 
 
 @NgModule({
@@ -18,7 +19,7 @@ import { ChatComponent } from './list-chat/chat.component';
   ],
   declarations: [LoginComponent, PrincipalComponent, CalendarComponent, 
                   MenuComponent, HeaderComponent, PerfilComponent, PublicacionesComponent,
-                  PublicacionImgUnComponent, PublicacionImgMuchComponent, 
+                  PublicacionImgUnComponent, PublicacionImgMuchComponent, NotifiComponent,
                   ChatComponent]
 })
 export class ComunicationcdhModule { }
