@@ -54,18 +54,18 @@
      margin:0 auto;
      display:table;
  }
- 
+
  @media (min-width: 320px) {
-   .icon-pad{
-     padding: 1px 16px 1px 4px ;
-   }
- }
- /* 4 columnas para grandes tablets*/
- @media (min-width: 992px) {
-   .icon-pad{
-     padding: 1px 27px 1px 0px ;
-   }
- }
+  .icon-pad{
+    padding: 1px 16px 1px 4px ;
+  }
+}
+/* 4 columnas para grandes tablets*/
+@media (min-width: 992px) {
+  .icon-pad{
+    padding: 1px 27px 1px 0px ;
+  }
+}
  
  
  
@@ -116,7 +116,7 @@
        /*padding: 0px 36px;*/
    }
    .contLike{
-          padding: 0px 86px 0px 4px;
+          padding: 0px 86px 0px 20px;
    }
  
    .contChat{
