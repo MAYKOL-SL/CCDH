@@ -346,3 +346,26 @@
     height: 21px;
     border-radius: 50%;
   }
+
+div#imagenModal{
+  width: 200px;
+  height: 150px;
+}
+
+  .modal-body{
+    background-color: #EBEBEF;
+    
+  }
+  .row:after, .row:before {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+  .span6 {
+    float: left;
+    width: 45%;
+    padding: 1%;
+  }
+  .emojionearea-editor:not(.inline) {
+    min-height: 8em!important;
+  }
