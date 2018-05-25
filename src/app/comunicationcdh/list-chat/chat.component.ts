@@ -4,7 +4,7 @@ declare var jQuery:any;
 declare var $:any;
 
 @Component({
-    selector: 'chat-desk',
+    selector: 'chat',
     templateUrl: './chat.component.html',
     styleUrls: ['./chat.component.css']
 
@@ -18,15 +18,15 @@ export class ChatComponent{
 
     constructor(){
         this.titulo = 'Chat';
-        this.contact = new Contact(1, 'Nick Jones', 'assets/imagenes/contactos/nick.png', true, true, 'hola', '9:12 pm', 1);
+        this.contact = new Contact(1, 'Nick Jones', 'assets/imagenes/contactos/nick.png', true, 'hola', '9:12 pm', 1);
         this.contactos = [
-            new Contact(1, 'Nick Jones', 'assets/imagenes/contactos/nick.png', true, false, 'hola como esta?, hace tiempo que no te veo', '9:12 pm', 1),
-            new Contact(2, 'Eva Moor', 'assets/imagenes/contactos/eva.png', false, true, 'hola', '9:12 pm', 1),
-            new Contact(3, 'Jack Williams', 'assets/imagenes/contactos/lee.png', true, false, 'hola', '9:12 pm', 1),
-            new Contact(4, 'Lee Wong', 'assets/imagenes/contactos/nick.png', true, false, 'hola', '9:12 pm', 1),
-            new Contact(5, 'Alan Thompson', 'assets/imagenes/contactos/alan.png', true, false, 'hola', '9:12 pm', 1),
-            new Contact(6, 'Kate Martinez', 'assets/imagenes/contactos/kate.png', true, false, 'hola', '9:12 pm', 1),
-            new Contact(7, 'Jackson Moor', 'assets/imagenes/contactos/jack.png', true, false, 'hola', '9:12 pm', 1),
+            new Contact(1, 'Nick Jones', 'assets/imagenes/contactos/nick.png', true, 'hola como esta?, hace tiempo que no te veo', '9:12 pm', 1),
+            new Contact(2, 'Eva Moor', 'assets/imagenes/contactos/eva.png', true, 'hola', '9:12 pm', 1),
+            new Contact(3, 'Jack Williams', 'assets/imagenes/contactos/lee.png', true, 'hola', '9:12 pm', 1),
+            new Contact(4, 'Lee Wong', 'assets/imagenes/contactos/nick.png', true, 'hola', '9:12 pm', 1),
+            new Contact(5, 'Alan Thompson', 'assets/imagenes/contactos/alan.png', true, 'hola', '9:12 pm', 1),
+            new Contact(6, 'Kate Martinez', 'assets/imagenes/contactos/kate.png', true, 'hola', '9:12 pm', 1),
+            new Contact(7, 'Jackson Moor', 'assets/imagenes/contactos/jack.png', true, 'hola', '9:12 pm', 1),
 
         ];
         //accion de presionar en un contacto
