@@ -137,12 +137,12 @@ ul.osx-dock li:hover span {
 div#dockContainer {
     position: fixed;
     left: 50%;
-    bottom: -496px;
-    margin-left: -1000px; 
+    bottom: -570px;
+    margin-left: -250px; 
     height: 600px;
-    width: 2000px;
+    width: 500px;
     border-radius: 6px;
-    background: url(../../../assets/images/Fooder.svg);
+    background: url(../../../assets/images/fooder_new.svg);
 }
 div#dockWrapper {
     position: fixed;

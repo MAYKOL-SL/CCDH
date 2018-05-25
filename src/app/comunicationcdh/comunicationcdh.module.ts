@@ -15,6 +15,7 @@ import { NotifiComponent } from './notificaciones/notificaciones.component';
 import { TareasComponent } from './tareas/tareas.component';
 import { MensajeComponent } from './mensaje/mensaje.component';
 import { ContactoComponent } from './contactos/contacto.component';
+import { VideoLocalComponent } from './Video-Local/video-local.component';
 
 
 @NgModule({
@@ -26,5 +27,6 @@ import { ContactoComponent } from './contactos/contacto.component';
                   PublicacionImgUnComponent, PublicacionImgMuchComponent, NotifiComponent,
                   TareasComponent, ChatComponent, ChatGeneralComponent, MensajeComponent,
                 ContactoComponent]
+                  ChatComponent,VideoLocalComponent]
 })
 export class ComunicationcdhModule { }
