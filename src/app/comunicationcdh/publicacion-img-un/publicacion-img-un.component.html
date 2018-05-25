@@ -65,17 +65,24 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
           <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span></button>
+            <div id="btn-back">
+                <button type="button" class="close" data-dismiss="modal"></button>
+                <label id="text-back" data-dismiss="modal"> Atras </label>
+                <label id="text-principal"> Comment </label>
+                <label id="cant-like"> 51 </label> 
+                <img id="like-comment" src="../../../assets/images/Like_OFF.svg">                                                                                                                              
+            </div>
           </div>
         <div class="modal-body">
-          <div id="imagenModal" class="">
-            <img src="../../../assets/images/Comment_Cero.svg">
-          <h5>Start a comment here</h5>
-          </div>
+            
         </div>
         <div class="modal-footer">
-              <textarea id="chatComentario"></textarea>
+          <div id="chat-comment">
+                <input type="text" id="chatComentario"/>
+            </div>
+              <div id="cont-Comentario">
+                  <img class="enviarComentario" src="../../../assets/images/Sent.svg"/>
+              </div>
           </div>
         </div>
       </div>
